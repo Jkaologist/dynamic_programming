@@ -1,10 +1,9 @@
-def fib(n, memo = {}):
+def fib(n, memo = {0:0, 1:1}):
     if n in memo:
         return memo[n]
-    if n <= 2:
-        return 1
-    memo[n] = fib(n - 1) + fib(n - 2)
-    return memo[n]
+    else:
+        memo[n] = fib(n - 2) + fib (n - 1)
+        return memo[n]
 
 print(fib(6))
 print(fib(7))
