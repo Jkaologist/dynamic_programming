@@ -1,5 +1,5 @@
-def grid_traveler(m, n, memo = {}):
-    key = (m,n)
+def grid_traveler(m, n, memo={}):
+    key = (m, n)
     if key in memo:
         return memo[key]
     if m == 1 and n == 1:
@@ -10,6 +10,7 @@ def grid_traveler(m, n, memo = {}):
     memo[key] = result
     return result
 
-print(grid_traveler(2,3))
-print(grid_traveler(3,3))
-print(grid_traveler(5,3))
+
+print(grid_traveler(2, 3))
+print(grid_traveler(3, 3))
+print(grid_traveler(5, 3))
